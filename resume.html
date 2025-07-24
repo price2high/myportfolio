@@ -113,7 +113,12 @@
 .download-wrapper {
   text-align: center;
   margin: 30px 0;
+  position: fixed;          /* fixed position */
+  bottom: 20px;             /* distance from bottom */
+  right: 20px;              /* distance from right edge */
+  z-index: 9999;            /* stays on top of other content */
 }
+
 
 .download-btn {
   display: inline-block;
@@ -135,7 +140,7 @@
 
 </style>
 <div class="download-wrapper">
-  <a href="Tammy-Rogo-Resume.pdf" download class="download-btn">⬇ Download My Resume</a>
+  <a href="TammyTechResume.pdf" download class="download-btn">⬇ Download My Resume</a>
 </div>
 
 </head>
