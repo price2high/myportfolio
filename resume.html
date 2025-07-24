@@ -9,10 +9,12 @@
   body {
     margin: 0;
     padding: 0;
-    background: #fff0f5; /* light blush pink */
+    background: #f8f5fc; /* very light lilac */
     font-family: 'Open Sans', sans-serif;
-    color: #444;
+    color: #4a3b6d; /* dark lilac text */
     line-height: 1.6;
+    overflow-x: hidden;
+    position: relative;
   }
   .container {
     max-width: 900px;
@@ -25,20 +27,20 @@
   h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5em;
-    color: #d94f91; /* rose pink */
-    border-bottom: 3px solid #f7c4d6;
+    color: #9b59b6; /* lilac purple */
+    border-bottom: 3px solid #d9b3ff;
     padding-bottom: 10px;
     margin-bottom: 25px;
     text-align: center;
   }
   h2 {
-    color: #d94f91;
+    color: #9b59b6;
     margin-top: 30px;
-    border-bottom: 1px solid #f7c4d6;
+    border-bottom: 1px solid #d9b3ff;
     padding-bottom: 6px;
   }
   a {
-    color: #d94f91;
+    color: #8e44ad;
     text-decoration: none;
     font-weight: bold;
   }
@@ -62,13 +64,40 @@
   }
   .job-title {
     font-weight: bold;
-    color: #555;
+    color: #5e4b8b; /* darker lilac */
   }
   .company-date {
     font-style: italic;
-    color: #777;
+    color: #7d6c99;
+  }
+
+  /* ✨ Sparkle styles */
+  .sparkle {
+    position: fixed;
+    width: 6px;
+    height: 6px;
+    background: radial-gradient(circle, #ffffff 0%, #d9b3ff 60%, transparent 100%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: sparkle-move 3s linear forwards;
+    opacity: 0.8;
+  }
+  @keyframes sparkle-move {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: translateY(-50px) scale(1.3);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100px) scale(0.5);
+      opacity: 0;
+    }
   }
 </style>
+
 </head>
 <body>
   <div class="container">
